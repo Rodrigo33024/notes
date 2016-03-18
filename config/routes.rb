@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   get 'welcome/index'
 #008 FileCabinet -- Document restrictions visible only to creator  Styleeshets
+  authenticated :user do
+    root 'docs#index', as: 'authenticated_root'
+  end
   resources :docs
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
