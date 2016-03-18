@@ -44,3 +44,18 @@ nav {
 .wrap {
   padding: 2%;
 }
+
+.wrapper_with_pading {
+  display: flex;
+  justify-content: center;
+
+  .title {
+    font-size: 2rem;
+    text-transform: capitalize;
+
+    a {
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
