@@ -13,6 +13,9 @@ body {
 
 h1 {
   color: black;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #62CCCC;
 }
 
 h2 {
@@ -48,6 +51,7 @@ nav {
 .wrapper_with_pading {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   .title {
     font-size: 2rem;
@@ -58,4 +62,22 @@ nav {
       text-align: center;
     }
   }
+}
+
+form {
+  width: 90%;
+}
+.new-doc {
+  width: 100%;
+  text-align: center;
+}
+
+input, textarea {
+  min-height: 30px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+textarea {
+  height: 200px;
 }
